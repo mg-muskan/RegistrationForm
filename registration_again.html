@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap live Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Personal Css -->
+    <link rel="stylesheet" href="css/registration-again.css">
+    <link rel="stylesheet" href="css/registration-again-resp.css">
+    <!-- Project already present Css -->
+    <!-- <link rel="stylesheet" href="indexcss.css"> -->
+    <!-- Roboto Condensed Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- Registration Form -->
+    <section id="user-panel-registration-page">
+
+        <div class="container user-panel-registration">
+            
+            <!-- <div class="user-panel-registration-logo">
+                <a href="#"><img src="https://endiavolve.com/frontend/img/logo/LOGO2.png" alt=""></a>
+            </div> -->
+
+            <div class="row user-panel-registration-row">
+
+                <div class="user-panel-registration-heading col-12">
+                    <h2>Registration Form</h2>
+                </div>
+
+                <form class="user-panel-registration-form col-12" id="user-registration-form" action="../indexcss.css">
+                    <div class="user-panel-registration-details">
+
+                        <h5><b>Personal Details:</b></h5>
+                        <div class="input-group">
+                            <label for="" class="form-label col-sm-3">Full Name<span>*</span> :</label>
+                            <input class="form-control col-sm-9" type="text" placeholder="Full Name" name="full_name" id="user-reg-fullname">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-name">
+                            <span class="invalid">Please enter your full name</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="form-label col-sm-3">Email<span>*</span> :</label>
+                            <input class="form-control col-sm-9" type="email" placeholder="Email" name="email" id="user-reg-email">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-email">
+                            <span class="invalid">Please enter your Email</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="form-label col-sm-3">Mobile<span>*</span> :</label>
+                            <input class="form-control col-sm-9" type="number" placeholder="Mobile" name="mobile" id="user-reg-mobile" maxlength="10">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-mobile">
+                            <span class="invalid">Please enter your correct Mobile Number</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="form-label col-sm-3">Date of Birth<span>*</span> :</label>
+                            <input class="form-control col-sm-9" type="date" name="dob" id="user-reg-dob" max="2010-12-31">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-dob">
+                            <span class="invalid">Please fill your Date of Birth</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="form-label col-sm-3">Gender<span>*</span> :</label>
+                            <div class="user-panel-registration-radio">
+                                <input type="radio" name="gender" value="male" id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="female" id="female">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" value="other" id="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-gender">
+                            <span class="invalid">Please choose your Gender</span>
+                        </div>
+
+                        <div class="user-panel-registration-hr"></div>
+                        <!-- <hr class="user-panel-registration-hr"> -->
+                        <br>
+
+                        <h5><b>Education:</b></h5>
+                        <div class="input-group">
+                            <label for="" class="col-sm-3">University<span>*</span> :</label>
+                            <select class="form-select col-sm-9" name="university" id="user-reg-university">
+                                <option value="" selected disabled>Select University</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="user-panel-registration-other" id="university-other">
+                            <input type="text" class="form-control col-sm-9" name="university" placeholder="University Name" id="uni-other-in">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-university">
+                            <span class="invalid">Please enter your University Name</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="col-sm-3">College Name<span>*</span> :</label>
+                            <input class="form-control col-sm-9" type="text" placeholder="College Name" name="college" id="user-reg-college">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-college">
+                            <span class="invalid">Please enter your College Name</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="col-sm-3">Course<span>*</span> :</label>
+                            <select class="form-select col-sm-9" name="course" id="user-reg-course">
+                                <option value="" selected disabled>Select Course</option>
+                                <option value="be">BE</option>
+                                <option value="btech">BTech</option>
+                                <option value="diploma">Diploma</option>
+                            </select>
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-course">
+                            <span class="invalid">Please select your Course</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="col-sm-3">Branch<span>*</span> :</label>
+                            <select class="form-select col-sm-9" name="branch" id="user-reg-branch">
+                                <option value="" selected disabled>Select Branch</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="user-panel-registration-other" id="branch-other">
+                            <input type="text" class="form-control col-sm-9" name="branch" placeholder="Your Branch" id="branch-other-in">
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-branch">
+                            <span class="invalid">Please select your Branch</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="col-sm-3">Semester<span>*</span> :</label>
+                            <select class="form-select col-sm-9" name="semester" id="user-reg-semester">
+                                <option value="" selected disabled>Select Semester</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="user-panel-registration-invalid-input" id="registration-semester">
+                            <span class="invalid">Please select your Semester</span>
+                        </div>
+
+                        <div class="user-panel-registration-hr"></div>
+                        <!-- <hr class="user-panel-registration-hr"> -->
+                        <br>
+
+                        <h5><b>Confirm Password:</b></h5>
+                        <div class="input-group">
+                            <label for="" class="col-sm-4 col-lg-3">Password<span>*</span> :</label>
+                            <input class="form-control col-sm-8 col-lg-9" type="password" name="password" id="registration-password" placeholder="Password" oninput="passValidate()">
+                        </div>
+                        <div class="user-registration-password-progress">
+                            <div class="progress col col-md-8" id="user-registration-password-progress">
+                                <div class="bar" id="registration-password-bar"></div>
+                            </div>
+                        </div>
+                        <div class="user-panel-registration-invalid-inputs" id="registration-pass">
+                            <span class="invalid-pass" id="pass-message"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="" class="col-sm-4 col-lg-3">Confim Password<span>*</span> :</label>
+                            <input class="form-control col-sm-8 col-lg-9" type="password" name="confirm-password" id="registration-confirm-password" placeholder="Confirm Password" oninput="passValidate()">
+                        </div>
+                        <div class="user-registration-password-progress">
+                            <div class="progress col col-md-8" id="user-registration-confirm-password-progress">
+                                <div class="bar" id="registration-confirm-password-bar"></div>
+                            </div>
+                        </div>
+                        <div class="user-panel-registration-invalid-inputs" id="registration-cpass">
+                            <span class="invalid-pass" id="cpass-message"></span>
+                        </div>
+
+                        <div class="user-panel-registration-hr"></div>
+                        <!-- <hr class="user-panel-registration-hr"> -->
+                        <br>
+
+                        <div class="user-panel-registration-referral">
+                            <h5><b>Referral:</b></h5>
+                            <input class="form-control col-sm-9" type="text" name="referral" placeholder="Referral Code">
+                        </div>
+
+                        <div class="user-panel-registration-submit">
+                            <input type="submit" value="Submit" class="btn" id="user-registration-submit-btn"></input>
+                            <img src="img/Circles-menu-3.gif" alt="" id="user-registration-submit-gif" style="display: none;">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Registration Form -->
+
+    <script src="js/registration-validate.js"></script>
+    <script src="js/registration.js"></script>
+
+</body>
+</html>
